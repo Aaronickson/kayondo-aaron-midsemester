@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+      background-color: aqua; 
+      font-family: Roboto, sans-serif;
+    }
+
+        .navbar {
+            background-color: #2b5ac0;
+        }
+
+        .nav-link:hover {
+            color: #000 !important;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .nav-link.active {
+            background-color: #ffffff;
+            color: #4CAF50 !important;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 8px 15px;
+        }
+
+        h2 {
+            color: #2b5ac0;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .gallery img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        video {
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #2b5ac0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Wilden Primary School</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container my-5">
+            <h2>Gallery</h2>
+            <h5><b>Welcome to the Wilden Primary School Gallery, where we showcase the vibrant life of our school community</b></h5>
+            <p>
+                From academic achievements to fun-filled extracurricular activities, our gallery reflects the spirit, dedication, 
+                and joy of our students, teachers, and families. Browse through moments captured during:
+                <br>• School Events: Cultural celebrations, sports days, and competitions.<br>
+                • Classroom Activities: Learning sessions, group projects, and creative work.<br>
+                • Extracurricular Fun: Drama, music, art, and outdoor adventures.<br>
+                • Community Engagement: Charity drives and community service activities.<br>
+            </p>
+            <video controls class="img-fluid w-100 rounded">
+                <source src="vedeo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="school activities (1).jpeg" class="img-fluid" alt="Family"></div>
+                <div class="col-md-4"><img src="school activities (2).jpeg" class="img-fluid" alt="Fun Activities"></div>
+                <div class="col-md-4"><img src="school activities (3).jpeg" class="img-fluid" alt="Class Activities"></div>
+            </div>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="download (1).jpg" class="img-fluid" alt="Family"></div>
+                <div class="col-md-4"><img src="download (2).jpg" class="img-fluid" alt="Fun Activities"></div>
+                <div class="col-md-4"><img src="download.jpg" class="img-fluid" alt="Class Activities"></div>
+            </div>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="hq720.jpg" class="img-fluid" alt="Family"></div>
+                <div class="col-md-4"><img src="images (1).jpg" class="img-fluid" alt="Fun Activities"></div>
+                <div class="col-md-4"><img src="images (2).jpg" class="img-fluid" alt="Class Activities"></div>
+            </div>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="images (3).jpg" class="img-fluid" alt="Family"></div>
+                <div class="col-md-4"><img src="images (4).jpg" class="img-fluid" alt="Fun Activities"></div>
+                <div class="col-md-4"><img src="images (5).jpg" class="img-fluid" alt="Class Activities"></div>
+            </div>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="images.jpg" class="img-fluid" alt="Family"></div>
+                <div class="col-md-4"><img src="images (6).jpg" class="img-fluid" alt="Fun Activities"></div>
+                <div class="col-md-4"><img src="image6.jpg" class="img-fluid" alt="Class Activities"></div>
+            </div>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="image7.jpg" class="img-fluid" alt="Family"></div>
+                <div class="col-md-4"><img src="image8.jpg" class="img-fluid" alt="Fun Activities"></div>
+                <div class="col-md-4"><img src="image9.jpg" class="img-fluid" alt="Class Activities"></div>
+                <div class="col-md-4"><img src="image10.jpg" class="img-fluid" alt="Class Activities"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Wilden Primary School</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

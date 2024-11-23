@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Primary School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .social-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .social-icon {
+      text-align: center;
+      width: 100px;
+      flex: 1;
+    }
+
+    .social-icon img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icon img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    body{
+      background-color: aqua;
+      font-family: roboto;
+      
+    }
+    body {
+      background-color: rgba(0, 255, 255, 0.815);
+    }
+    .navbar {
+      background-color: #2b5ac0; 
+    }
+    .nav-link:hover {
+      color: #000 !important;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+   
+    .nav-link.active {
+      background-color: #ffffff;
+      color: #4CAF50 !important; 
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 15px;
+    }
+    .h1{
+      text-align: center;
+      color: blueviolet;
+    }
+    footer {
+      background-color: #2b5ac0;
+      color: #fff;
+    }
+    .button{
+      color: blueviolet;
+    }
+    
+   
+
+    
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+          <a class="navbar-brand" href="#">Wilden Primary School</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <main>
+
+    <section class="container my-5">
+        <h1>Contact Us</h1>
+    <form>
+        <div class="mb-3">
+          <label for="name" class="form-label"><b>Your Full Name:</b></label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label"><b>Your Email Address:</b></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label"><b>Your Phone Number:</b></label>
+          <input type="tel" class="form-control" id="number" placeholder="Enter your phone number" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label"><b>Leave Your Message</b></label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Submit</button>
+      </form>
+  </main>
+  <div class="social-media mt-5">
+    <div class="social-icon">
+      <a  target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+      <p>@wilden pri sch</p>
+    </div>
+    <div class="social-icon">
+      <a  target="_blank">
+        <img src="x.png" alt="Twitter">
+      </a>
+      <p>@wilden pri sch</p>
+
+      
+
+    </div>
+    <div class="social-icon">
+      <a  target="_blank">
+        <img src="instagram.jpg" alt="Instagram">
+      </a>
+      <p>@wilden pri sch</p>
+    </div>
+    <div class="social-icon">
+      <a target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+      <p><b>0709891518</b></p>
+    </div>
+    
+    <div class="social-icon">
+      <a href="wildenprimaryschool.co.ug" target="_blank">
+        <img src="gmail.png" alt="Gmail"><br>
+      </a><br>
+      <p>wildenprimaryschool.co.ug</p>
+    </div>
+    
+    
+  </div>
+    </section>
+  <footer class=" text-white text-center py-3">
+    <p>&copy; 2024 Wilden Primary School</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
